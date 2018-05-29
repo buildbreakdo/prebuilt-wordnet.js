@@ -9,8 +9,7 @@
   },
   "scripts": {
     "test": "nodeunit ./tests/unit_test.js ",
-    "build:dev": "node --max_old_space_size=8192 node_modules/.bin/webpack --display-error-details --display-modules",
-    "build:prod": "NODE_ENV=production webpack --display-error-details --display-modules --max_old_space_size=8192"
+    "build": "NODE_ENV=production node --max_old_space_size=8192 node_modules/.bin/webpack --display-error-details --display-modules"
   },
   "main": "build/index.js",
   "dependencies": {
