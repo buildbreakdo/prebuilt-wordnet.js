@@ -21,7 +21,7 @@ module.exports = {
   // },
   target: 'node',
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
-  entry: ['babel-polyfill', './src/index.js'],
+  entry: ['./src/index.js'],
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
